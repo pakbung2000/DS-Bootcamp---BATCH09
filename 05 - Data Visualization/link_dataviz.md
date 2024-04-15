@@ -8,7 +8,7 @@
   - Creating charts sunch as Pie Chart, Bar Chart, Stacked Column Chart, Scatter Plot and Line Chart
   - Pattern matching interested data by `regexmatch()` and `ifs()`
 
-- Visualizing data in R [Link of html file](file:///C:/Users/User/OneDrive/Documents/MyDS_journey/visualization/hw_ver2.html)
+- Visualizing data in R [Link to Notion](https://www.notion.so/09-cd3325be25a74ae99a938e7e52af6312?pvs=4)
   - Using library `ggplot2` and `tidyverse`
   - Combine charts by `ggpubr` and `patchwork`
 
