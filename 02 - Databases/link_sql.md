@@ -1,6 +1,7 @@
 
 ## Content
 
+Link to Replit:  [sql_batch09](https://replit.com/@pakbungdesu/SQLHWBatch09Pakbung#main.sql)
 
 - Building own datasets `drop table if exists`, `create table` and `insert into`
 - Query data to answer questions
