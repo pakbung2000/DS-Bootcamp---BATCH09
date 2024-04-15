@@ -57,8 +57,8 @@ sprintf("higher_bound: %0.3f", upper_bound)
 
 # P-value from right-tail proportion test at 0.05 significance level
 
-# H0: p = 0.2
-# Ha: p!= 0.2
+# H0: p >= 0.2
+# Ha: p < 0.2
 
 x <- 10
 n <- 40
