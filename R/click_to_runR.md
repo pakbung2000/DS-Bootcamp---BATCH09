@@ -1,3 +1,0 @@
-### Click link to run in Google Colab
-- HW01 Rock-Paper-Scissor game [link](https://colab.research.google.com/drive/1sQHmSOFKScUWpHb5l7LVarAUz4wXrb3l)
-- HW02 Restuarant chatbot [link](https://colab.research.google.com/drive/1t96dBNIS6xnIDATaO0qG_gpbS5_gix0W#scrollTo=QkoE60SrGn9W)
