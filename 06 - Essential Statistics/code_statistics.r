@@ -1,8 +1,7 @@
 
 ### ESTIMATION
 
-# Proportion, 1 population
-# Specify sample occurrences (x), sample size (n)
+# 1. Proportion of 1 population
 x = 6
 n = 30
 confidence_level = 0.95
@@ -26,10 +25,7 @@ sprintf("lower_bound: %0.3f", lower_bound)
 sprintf("higher_bound: %0.3f", higher_bound)
 
 
-# Mean, 1 population
-# Specify sample mean (x_bar)
-# sample standard deviation (s)
-# sample size (n)
+# 2. Mean of 1 population
 
 x_bar = 62.1
 s = 13.46
@@ -55,7 +51,7 @@ sprintf("higher_bound: %0.3f", upper_bound)
 
 ### HYPOTHESIS TESTING
 
-# P-value from right-tail proportion test at 0.05 significance level
+# 1. P-value of right-tailed proportion test at 0.05 significance level
 
 # H0: p >= 0.2
 # Ha: p < 0.2
@@ -68,7 +64,7 @@ p_value <- prop.test(x, n, p,
           alternative = c("greater"), 
           conf.level = 0.95, correct = FALSE)$p.value
 
-# We got p_value = 0.2145977
+# p_value = 0.2145977
 # From p_value > 0.05, therefore we failed to reject H0
 
 
