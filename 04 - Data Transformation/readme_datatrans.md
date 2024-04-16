@@ -1,7 +1,6 @@
 
 ## Content
 [Link to Notion](https://www.notion.so/09-bcdf901d634f4b49a16e17dabc9df876?pvs=4) \
-[Or link here](https://github.com/pakbung2000/DS-Bootcamp-BATCH09/blob/main/04%20-%20Data%20Transformation/code_datatrans.r)
 
 - Using dataset from `library(nycflights13)`
 - Working with library `dplyr`
