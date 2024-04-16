@@ -4,7 +4,9 @@ import math
 
 ### ESTIMATION
 
-# Proportion of one population and two-tailed
+# 1. Proportion of one population 
+# Two-tailed test
+
 x = 6
 n = 30
 confidence_level = 0.95
@@ -30,7 +32,8 @@ print(f"lower_bound: {lower_bound}")
 print(f"confidence interval: [{lower_bound}, {higher_bound}]")
 
 
-# Mean of one population and two-tailed
+# 2. Mean of one population 
+# Two-tailed test
 
 x_bar = 62.1
 s = 13.46
@@ -55,16 +58,15 @@ print(f"upper_bound: {upper_bound}")
 
 ### HYPOTHESIS TESTING
 
-# For right-tailed proportion test
+# 1. Right-tailed proportion test
+
 # H0: p <= 0.2
 # Ha: p > 0.2
 
-# Specify the number of occurrences (x), the sample size (n)
 x = 10
 n = 40
 pi = 0.2
-sig_level = 0.05 # Alpha
-# Area H0 = 0.95
+sig_level = 0.05 # confident level = 0.95
 
 p = 10/40
 std_p = math.sqrt((pi*(1-pi))/n)
