@@ -1,0 +1,36 @@
+Resampling: CV 
+Model:  lm 
+Fold:  5 
+5.498689 0.710508 3.71874 
+Resampling: CV 
+Model:  lm 
+Fold:  10 
+5.498689 0.710508 3.71874 
+Resampling: CV 
+Model:  glm 
+Fold:  5 
+5.498689 0.710508 3.71874 
+Resampling: CV 
+Model:  glm 
+Fold:  10 
+5.498689 0.710508 3.71874 
+Resampling: CV 
+Model:  knn 
+Fold:  5 
+4.275831 0.8242266 2.577255 
+Resampling: CV 
+Model:  knn 
+Fold:  10 
+4.275831 0.8242266 2.577255 
+Resampling: LOOCV 
+Model:  lm 
+5.498689 0.710508 3.71874 
+Resampling: boot 
+Model:  lm 
+5.498689 0.710508 3.71874 
+Resampling: LOOCV 
+Model:  glm 
+5.498689 0.710508 3.71874 
+Resampling: boot 
+Model:  glm 
+5.498689 0.710508 3.71874 
