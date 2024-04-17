@@ -2,7 +2,7 @@
 import scipy.stats as stats
 import math
 
-### ESTIMATION
+### Estimation
 
 # 1. Proportion of one population 
 # Two-tailed test
@@ -56,7 +56,7 @@ print(f"moe: {moe}")
 print(f"lower_bound: {lower_bound}")
 print(f"upper_bound: {upper_bound}")
 
-### HYPOTHESIS TESTING
+### Hypothesis testing
 
 # 1. Proportion of one population
 # Right-tailed test
