@@ -1,4 +1,7 @@
 
+# Training with "RMSE" metric
+# Using preProcess = c("center", "scale")
+
 
 library(tidyverse)
 library(caret)
@@ -23,15 +26,8 @@ train_test_split <- function(data, size){
 
 prep_df <- train_test_split(df, 0.8)
 
-corMat <-  df %>%
-  select(crim, zn, indus, nox, 
-  rm, age, dis, rad, tax, ptratio, 
-  b, lstat, medv) %>%
-  cor()
 
-corMat 
-
-# I chose columns that |corr| > 0.5 for training
+# I chose corr > 0.5
 
 # 2. train
 
@@ -67,7 +63,8 @@ for(met in model_metcv){
                                          data = prep_df[[1]],
                                          method = met,
                                          metric = "RMSE", 
-                                         trControl = train_control$cv[[num]])
+                                         trControl = train_control$cv[[num]],
+                                         preProcess = c("center", "scale"))
     
   }
 }
@@ -78,7 +75,8 @@ for(met in model_met){
                                   data = prep_df[[1]],
                                   method = met,
                                   metric = "RMSE",
-                                  trControl = train_control$LOOCV)
+                                  trControl = train_control$LOOCV,
+                                  preProcess = c("center", "scale"))
 }
 
 # with train control bootrap
@@ -87,7 +85,8 @@ for(met in model_met){
                                   data = prep_df[[1]],
                                   method = met,
                                   metric = "RMSE",
-                                  trControl = train_control$boot)
+                                  trControl = train_control$boot,
+                                  preProcess = c("center", "scale"))
   
 }
 
@@ -123,10 +122,51 @@ for(met in model_metcv){
 }
 
 for(met in model_met){
-  post_loocv[[met]][[num]] <- postResample(predict_cv[[met]][[num]], prep_df[[2]]$medv)
-  post_boot[[met]][[num]] <- postResample(predict_cv[[met]][[num]], prep_df[[2]]$medv)
+  post_loocv[[met]] <- postResample(predict_loocv[[met]], prep_df[[2]]$medv)
+  post_boot[[met]] <- postResample(predict_boot[[met]], prep_df[[2]]$medv)
 }
 
 
 
+# write report of train model
 
+sink("model_rmse_preCen.txt")
+
+for (met in model_met) {
+  print(model_trainboot[[met]])
+  print(model_trainloocv[[met]])
+  
+}
+
+for (met in model_metcv) {
+  for(num in c(5,10)){
+    print(model_traincv[[met]][[num]])
+  }
+}
+
+sink()
+
+# write report of prediction
+
+sink("test_rmse_preCen.txt")
+
+for(met in model_metcv){
+  for(num in c(5,10)){
+    cat("Resampling: CV", "\n")
+    cat("Model: ", met, "\n")
+    cat("Fold: ", num, "\n")
+    cat(post_cv[[met]][[num]], "\n")
+  }
+}
+
+for(met in model_met){
+  cat("Resampling: LOOCV", "\n")
+  cat("Model: ", met, "\n")
+  cat(post_loocv[[met]], "\n")
+  
+  cat("Resampling: boot", "\n")
+  cat("Model: ", met, "\n")
+  cat(post_boot[[met]], "\n")
+}
+
+sink()
