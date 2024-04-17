@@ -1,0 +1,18 @@
+Q1. number of flights of each airline in quarter 4,,
+carrier,name,count_flights
+UA,United Air Lines Inc.,19539
+EV,ExpressJet Airlines Inc.,18411
+B6,JetBlue Airways,17682
+DL,Delta Air Lines Inc.,15918
+AA,American Airlines Inc.,10611
+MQ,Envoy Air,8629
+US,US Airways Inc.,6848
+9E,Endeavor Air Inc.,6441
+WN,Southwest Airlines Co.,4233
+VX,Virgin America,1852
+FL,AirTran Airways Corporation,906
+F9,Frontier Airlines Inc.,237
+AS,Alaska Airlines Inc.,228
+YV,Mesa Airlines Inc.,207
+HA,Hawaiian Airlines Inc.,99
+OO,SkyWest Airlines Inc.,25
