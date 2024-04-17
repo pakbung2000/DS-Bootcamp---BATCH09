@@ -2,6 +2,7 @@
 
 library(nycflights13)
 library(dplyr)
+library(rio)
 data("flights")
 data("airlines")
 data("planes")
@@ -93,14 +94,12 @@ df8 <- filter(airports, grepl(paste(state.name, collapse='|'), airports$name)) %
 
 ### Write csv file
 
-write.csv(df1, "df1.csv")
-write.csv(df2, "df2.csv")
-write.csv(df3, "df3.csv")
-write.csv(df4, "df4.csv")
-write.csv(df5, "df5.csv")
-write.csv(df6, "df6.csv")
-write.csv(df7, "df7.csv")
-write.csv(df8, "df8.csv")
+csv_list <- list(df1, df2, df3, df4, df5, df6, df7, df8)
+
+export_list(csv_list, c("df1.csv", "df2.csv", "df3.csv", "df4.csv", "df5.csv",
+                        "df6.csv", "df7.csv", "df8.csv"))
+
+
 
 
 
