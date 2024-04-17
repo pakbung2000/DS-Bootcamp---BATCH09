@@ -16,5 +16,5 @@
 
 - Regression Model ver.2
 
-  - Since `CV` with knn models have least Rsquared, I tuned only this model in version 2
-  - Add more pre-procession: `preProcess = c("center", "scale")` and `preProcess = "range"`
+  - I tuned only `CV` method for this version, since it has least Rsquared in ver.1
+  - Add more pre-processing: `preProcess = c("center", "scale")` and `preProcess = "range"`
