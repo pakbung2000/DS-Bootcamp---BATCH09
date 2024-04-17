@@ -18,4 +18,4 @@
     
   - Linear Regression
     
-  - Logistic Regression
+  - Logistic Regression (Binary Classification): Accuracy, Precision, Recall, F1
