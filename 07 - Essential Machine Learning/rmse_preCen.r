@@ -27,8 +27,6 @@ train_test_split <- function(data, size){
 prep_df <- train_test_split(df, 0.8)
 
 
-# I chose corr > 0.5
-
 # 2. train
 
 model_traincv = c()
