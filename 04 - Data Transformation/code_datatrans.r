@@ -91,7 +91,16 @@ df8 <- filter(airports, grepl(paste(state.name, collapse='|'), airports$name)) %
   select(airport = faa, name)
 
 
+### Write csv file
 
+write.csv(df1, "df1.csv")
+write.csv(df2, "df2.csv")
+write.csv(df3, "df3.csv")
+write.csv(df4, "df4.csv")
+write.csv(df5, "df5.csv")
+write.csv(df6, "df6.csv")
+write.csv(df7, "df7.csv")
+write.csv(df8, "df8.csv")
 
 
 
