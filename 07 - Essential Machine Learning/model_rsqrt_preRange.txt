@@ -1,0 +1,142 @@
+Linear Regression 
+
+404 samples
+  3 predictor
+
+Pre-processing: re-scaling to [0, 1] (3) 
+Resampling: Bootstrapped (25 reps) 
+Summary of sample sizes: 404, 404, 404, 404, 404, 404, ... 
+Resampling results:
+
+  RMSE      Rsquared   MAE     
+  5.557917  0.6327396  3.835369
+
+Tuning parameter 'intercept' was held constant at a value of TRUE
+Linear Regression 
+
+404 samples
+  3 predictor
+
+Pre-processing: re-scaling to [0, 1] (3) 
+Resampling: Leave-One-Out Cross-Validation 
+Summary of sample sizes: 403, 403, 403, 403, 403, 403, ... 
+Resampling results:
+
+  RMSE      Rsquared   MAE     
+  5.233516  0.6558632  3.681873
+
+Tuning parameter 'intercept' was held constant at a value of TRUE
+Generalized Linear Model 
+
+404 samples
+  3 predictor
+
+Pre-processing: re-scaling to [0, 1] (3) 
+Resampling: Bootstrapped (25 reps) 
+Summary of sample sizes: 404, 404, 404, 404, 404, 404, ... 
+Resampling results:
+
+  RMSE      Rsquared   MAE    
+  5.326792  0.6563966  3.72049
+
+Generalized Linear Model 
+
+404 samples
+  3 predictor
+
+Pre-processing: re-scaling to [0, 1] (3) 
+Resampling: Leave-One-Out Cross-Validation 
+Summary of sample sizes: 403, 403, 403, 403, 403, 403, ... 
+Resampling results:
+
+  RMSE      Rsquared   MAE     
+  5.233516  0.6558632  3.681873
+
+Linear Regression 
+
+404 samples
+  3 predictor
+
+Pre-processing: re-scaling to [0, 1] (3) 
+Resampling: Cross-Validated (5 fold) 
+Summary of sample sizes: 323, 323, 323, 323, 324 
+Resampling results:
+
+  RMSE      Rsquared   MAE     
+  5.157312  0.6702434  3.672383
+
+Tuning parameter 'intercept' was held constant at a value of TRUE
+Linear Regression 
+
+404 samples
+  3 predictor
+
+Pre-processing: re-scaling to [0, 1] (3) 
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 364, 363, 364, 363, 364, 364, ... 
+Resampling results:
+
+  RMSE      Rsquared   MAE     
+  5.115344  0.6803133  3.664568
+
+Tuning parameter 'intercept' was held constant at a value of TRUE
+Generalized Linear Model 
+
+404 samples
+  3 predictor
+
+Pre-processing: re-scaling to [0, 1] (3) 
+Resampling: Cross-Validated (5 fold) 
+Summary of sample sizes: 323, 323, 323, 324, 323 
+Resampling results:
+
+  RMSE      Rsquared   MAE     
+  5.120982  0.6799562  3.648555
+
+Generalized Linear Model 
+
+404 samples
+  3 predictor
+
+Pre-processing: re-scaling to [0, 1] (3) 
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 364, 362, 364, 364, 364, 365, ... 
+Resampling results:
+
+  RMSE      Rsquared   MAE     
+  5.121025  0.6807207  3.677067
+
+k-Nearest Neighbors 
+
+404 samples
+  3 predictor
+
+Pre-processing: re-scaling to [0, 1] (3) 
+Resampling: Cross-Validated (5 fold) 
+Summary of sample sizes: 324, 323, 324, 323, 322 
+Resampling results across tuning parameters:
+
+  k  RMSE      Rsquared   MAE     
+  5  4.443886  0.7700222  3.001301
+  7  4.466154  0.7655414  3.012256
+  9  4.478578  0.7644470  2.992807
+
+Rsquared was used to select the optimal model using the largest value.
+The final value used for the model was k = 5.
+k-Nearest Neighbors 
+
+404 samples
+  3 predictor
+
+Pre-processing: re-scaling to [0, 1] (3) 
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 364, 363, 364, 365, 363, 363, ... 
+Resampling results across tuning parameters:
+
+  k  RMSE      Rsquared   MAE     
+  5  4.192325  0.7685080  2.770889
+  7  4.332363  0.7556787  2.852425
+  9  4.375458  0.7548908  2.904912
+
+Rsquared was used to select the optimal model using the largest value.
+The final value used for the model was k = 5.
