@@ -1,5 +1,5 @@
 
-### ESTIMATION
+### Estimation
 
 # 1. Proportion of one population
 # Two-tailed test
@@ -51,7 +51,7 @@ sprintf("lower_bound: %0.3f", lower_bound)
 sprintf("higher_bound: %0.3f", upper_bound)
 
 
-### HYPOTHESIS TESTING
+### Hypothesis testing
 
 # 1. Right-tailed proportion test 
 # At 5% significance level
