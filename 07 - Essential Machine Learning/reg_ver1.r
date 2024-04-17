@@ -31,7 +31,7 @@ corMat <-  df %>%
 
 corMat 
 
-# I chose |corr| > 0.5 for training
+# I chose columns that |corr| > 0.5 for training
 
 # 2. train
 
