@@ -1,6 +1,6 @@
 
 ## Content
-[Link to Notion](https://www.notion.so/09-bcdf901d634f4b49a16e17dabc9df876?pvs=4)
+[Link to view result](https://docs.google.com/spreadsheets/d/1PcFaMuNgFLsrk_M8fUDOXMV5ekJQ1E0cMsyplThFec0/edit?usp=sharing)
 
 - Using dataset from `library(nycflights13)`
 - Working across 4 tables namely `data("flights")`, `data("airlines")`, `data("planes")`, `data("airports")` and `data("weather")`
