@@ -16,6 +16,17 @@
   - Confidence Interval and Hypothesis Testing :  [in Python](https://github.com/pakbung2000/DS-Bootcamp-BATCH09/blob/main/06%20-%20Essential%20Statistics/estimation_hypotest.py) /
     [in R](https://github.com/pakbung2000/DS-Bootcamp-BATCH09/blob/main/06%20-%20Essential%20Statistics/estimation_hypotest.r)
     
-  - Linear Regression: Features(X), Label/Target(Y), `lm()` and `coef()`
+  - Linear Regression
+    - Features(X)
+    - Label/Target(Y)
+    - Fitting Linear Models `lm()`
+    - Extraction of model coefficients `coef()`
     
-  - Logistic Regression (Binary Classification) : Accuracy, Precision, Recall, F1 and Confusion Matrix
+  - Logistic Regression (Binary Classification)
+    - Accuracy, Precision
+    - Recall
+    - F1 score
+    - Confusion Matrix
+   
+
+  
