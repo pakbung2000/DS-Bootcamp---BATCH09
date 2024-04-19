@@ -1,0 +1,382 @@
+
+
+# 4. Evaluate
+> # Accuracy
+> confusionMatrix(factor(pred_acc_preCen[[5]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes",
++                 mode = "prec_recall")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  835  79
+       Yes  20  66
+                                          
+               Accuracy : 0.901           
+                 95% CI : (0.8808, 0.9188)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 9.231e-06       
+                                          
+                  Kappa : 0.5196          
+                                          
+ Mcnemar's Test P-Value : 5.569e-09       
+                                          
+              Precision : 0.7674          
+                 Recall : 0.4552          
+                     F1 : 0.5714          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0660          
+   Detection Prevalence : 0.0860          
+      Balanced Accuracy : 0.7159          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> confusionMatrix(factor(pred_acc_preCen[[10]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes",
++                 mode = "prec_recall")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  836  76
+       Yes  19  69
+                                          
+               Accuracy : 0.905           
+                 95% CI : (0.8851, 0.9225)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 1.407e-06       
+                                          
+                  Kappa : 0.5421          
+                                          
+ Mcnemar's Test P-Value : 9.166e-09       
+                                          
+              Precision : 0.7841          
+                 Recall : 0.4759          
+                     F1 : 0.5923          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0690          
+   Detection Prevalence : 0.0880          
+      Balanced Accuracy : 0.7268          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> confusionMatrix(factor(pred_acc_preRange[[5]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes",
++                 mode = "prec_recall")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  841  78
+       Yes  14  67
+                                          
+               Accuracy : 0.908           
+                 95% CI : (0.8884, 0.9252)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 3.050e-07       
+                                          
+                  Kappa : 0.5457          
+                                          
+ Mcnemar's Test P-Value : 5.093e-11       
+                                          
+              Precision : 0.8272          
+                 Recall : 0.4621          
+                     F1 : 0.5929          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0670          
+   Detection Prevalence : 0.0810          
+      Balanced Accuracy : 0.7228          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> confusionMatrix(factor(pred_acc_preRange[[10]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes",
++                 mode = "prec_recall")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  834  74
+       Yes  21  71
+                                          
+               Accuracy : 0.905           
+                 95% CI : (0.8851, 0.9225)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 1.407e-06       
+                                          
+                  Kappa : 0.5483          
+                                          
+ Mcnemar's Test P-Value : 9.550e-08       
+                                          
+              Precision : 0.7717          
+                 Recall : 0.4897          
+                     F1 : 0.5992          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0710          
+   Detection Prevalence : 0.0920          
+      Balanced Accuracy : 0.7325          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> # AUC
+> 
+> confusionMatrix(factor(pred_pr_preCen[[5]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes",
++                 mode = "prec_recall")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  841  79
+       Yes  14  66
+                                          
+               Accuracy : 0.907           
+                 95% CI : (0.8873, 0.9243)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 5.136e-07       
+                                          
+                  Kappa : 0.5391          
+                                          
+ Mcnemar's Test P-Value : 3.212e-11       
+                                          
+              Precision : 0.8250          
+                 Recall : 0.4552          
+                     F1 : 0.5867          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0660          
+   Detection Prevalence : 0.0800          
+      Balanced Accuracy : 0.7194          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> confusionMatrix(factor(pred_pr_preCen[[10]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes",
++                 mode = "prec_recall")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  841  79
+       Yes  14  66
+                                          
+               Accuracy : 0.907           
+                 95% CI : (0.8873, 0.9243)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 5.136e-07       
+                                          
+                  Kappa : 0.5391          
+                                          
+ Mcnemar's Test P-Value : 3.212e-11       
+                                          
+              Precision : 0.8250          
+                 Recall : 0.4552          
+                     F1 : 0.5867          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0660          
+   Detection Prevalence : 0.0800          
+      Balanced Accuracy : 0.7194          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> 
+> confusionMatrix(factor(pred_pr_preRange[[5]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes",
++                 mode = "prec_recall")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  841  78
+       Yes  14  67
+                                          
+               Accuracy : 0.908           
+                 95% CI : (0.8884, 0.9252)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 3.050e-07       
+                                          
+                  Kappa : 0.5457          
+                                          
+ Mcnemar's Test P-Value : 5.093e-11       
+                                          
+              Precision : 0.8272          
+                 Recall : 0.4621          
+                     F1 : 0.5929          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0670          
+   Detection Prevalence : 0.0810          
+      Balanced Accuracy : 0.7228          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> confusionMatrix(factor(pred_pr_preRange[[10]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes",
++                 mode = "prec_recall")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  841  78
+       Yes  14  67
+                                          
+               Accuracy : 0.908           
+                 95% CI : (0.8884, 0.9252)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 3.050e-07       
+                                          
+                  Kappa : 0.5457          
+                                          
+ Mcnemar's Test P-Value : 5.093e-11       
+                                          
+              Precision : 0.8272          
+                 Recall : 0.4621          
+                     F1 : 0.5929          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0670          
+   Detection Prevalence : 0.0810          
+      Balanced Accuracy : 0.7228          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> 
+> # Decision tree
+> 
+> confusionMatrix(factor(pred_rpart_preCen[[5]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  836  69
+       Yes  19  76
+                                          
+               Accuracy : 0.912           
+                 95% CI : (0.8927, 0.9288)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 3.374e-08       
+                                          
+                  Kappa : 0.5858          
+                                          
+ Mcnemar's Test P-Value : 1.757e-07       
+                                          
+            Sensitivity : 0.5241          
+            Specificity : 0.9778          
+         Pos Pred Value : 0.8000          
+         Neg Pred Value : 0.9238          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0760          
+   Detection Prevalence : 0.0950          
+      Balanced Accuracy : 0.7510          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> confusionMatrix(factor(pred_rpart_preCen[[10]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  836  69
+       Yes  19  76
+                                          
+               Accuracy : 0.912           
+                 95% CI : (0.8927, 0.9288)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 3.374e-08       
+                                          
+                  Kappa : 0.5858          
+                                          
+ Mcnemar's Test P-Value : 1.757e-07       
+                                          
+            Sensitivity : 0.5241          
+            Specificity : 0.9778          
+         Pos Pred Value : 0.8000          
+         Neg Pred Value : 0.9238          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0760          
+   Detection Prevalence : 0.0950          
+      Balanced Accuracy : 0.7510          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> confusionMatrix(factor(pred_rpart_preRange[[5]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  841  72
+       Yes  14  73
+                                          
+               Accuracy : 0.914           
+                 95% CI : (0.8949, 0.9306)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 1.044e-08       
+                                          
+                  Kappa : 0.5841          
+                                          
+ Mcnemar's Test P-Value : 7.923e-10       
+                                          
+            Sensitivity : 0.5034          
+            Specificity : 0.9836          
+         Pos Pred Value : 0.8391          
+         Neg Pred Value : 0.9211          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0730          
+   Detection Prevalence : 0.0870          
+      Balanced Accuracy : 0.7435          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
+> confusionMatrix(factor(pred_rpart_preRange[[10]]), 
++                 factor(prep_df[[2]]$churn),
++                 positive = "Yes")
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  No Yes
+       No  836  69
+       Yes  19  76
+                                          
+               Accuracy : 0.912           
+                 95% CI : (0.8927, 0.9288)
+    No Information Rate : 0.855           
+    P-Value [Acc > NIR] : 3.374e-08       
+                                          
+                  Kappa : 0.5858          
+                                          
+ Mcnemar's Test P-Value : 1.757e-07       
+                                          
+            Sensitivity : 0.5241          
+            Specificity : 0.9778          
+         Pos Pred Value : 0.8000          
+         Neg Pred Value : 0.9238          
+             Prevalence : 0.1450          
+         Detection Rate : 0.0760          
+   Detection Prevalence : 0.0950          
+      Balanced Accuracy : 0.7510          
+                                          
+       'Positive' Class : Yes             
+                                          
+> 
