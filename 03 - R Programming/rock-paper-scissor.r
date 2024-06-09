@@ -5,7 +5,7 @@
 game <- function(){
 
   flush.console()
-  cat("Welcome to Rock - Paper - Scissor Game ⚔️\n")
+  cat("Welcome to Rock - Paper - Scissor Game 🔥\n")
   cat("WIN +2\nTIED +1\nLOSE 0\n")
   cat("You must enter [rock], [paper], or [scissor]\n")
 
@@ -30,7 +30,7 @@ game <- function(){
   while (con != "stop"){
 
   # USER PART
-  cat("\nROUND ", i, "\n")
+  cat("\nRound ", i, "\n")
   flush.console()
   user_text <- readline("Your hand?: ")
   user_hand <- hand_to_num(user_text)
